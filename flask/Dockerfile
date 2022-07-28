@@ -7,7 +7,7 @@ WORKDIR /home/moljin/FDKproject0.1/flask/
 
 RUN python -m pip install --upgrade pip
 
-RUN pip install -r flask/requirements.txt
+RUN pip install -r requirements.txt
 
 EXPOSE 5000
 
