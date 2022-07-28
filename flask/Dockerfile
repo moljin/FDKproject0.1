@@ -13,4 +13,4 @@ RUN pip install -r flask/requirements.txt
 # flask 폴더 안에 있는 app.py실행
 EXPOSE 5000
 #CMD ["python3", "flask/app.py", "--host=0.0.0.0"]
-CMD ["gunicorn", "--workers=2", "--bind=0.0.0.0", "app:app"]
+CMD ["gunicorn", "--workers=2", "--bind=0.0.0.0", "flask.app:app"]
