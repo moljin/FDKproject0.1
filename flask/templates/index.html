@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <style>
+        a {text-decoration: none}
+    </style>
 </head>
 <body>
 <div class="section-container">
-    Flask-Docker-Nginx World, Congratulation!!!
+    <h4>Flask-Docker-Nginx World, Congratulation!!!</h4>
+    <h5>[ 머라도 ]</h5>
+                        FDproject0.1 <br>
+                            ├── docker-compose.yml <br>
+                            ├── flask <br>
+                            │ ├── Dockerfile <br>
+                            │ ├── app.py <br>
+                            │ ├── requirements.txt <br>
+                            │ ├── route <br>
+                            │ ├── templates <br>
+                            │ └── uwsgi.ini <br>
+                            ├── nginx <br>
+                            │ ├── Dockerfile <br>
+                            │ └── nginx.conf <br>
+                            └── venv <br><br>
+                        pip freeze > requirements.txt <br>
+                        pip freeze > flask/requirements.txt<br>
+                        python flask/app.py <br>
+                        " <br>
+                        EXPOSE 5000<br>
+                        CMD ["python3", <span style="color: red">"flask/app.py"</span>, "--host=0.0.0.0"]<br>
+                        " <br>
+
+                        <a href="https://velog.io/@kogoon/Flask%EB%A5%BC-Docker%EB%A1%9C-%EC%9B%B9%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0" target="_blank">Flask를 Docker로 웹서버 구축하기</a><br>
+                        <a href="https://wpgur.tistory.com/76" target="_blank">docker-compose로 서버 구축하기(Flask + uwsgi + Nginx)(ubuntu)</a><br><br>
+                        docker rmi $(docker images -f "dangling=true" -q) <br>
+                        <a href="https://web-front-end.tistory.com/102" target="_blank">[ Docker ] dangling image ( 이름 없는 이미지 / none 이미지 / <none>:<none> 이미지) 제거</a><br><br>
+                        <a href="https://velog.io/@swhybein/Docker-%EC%8B%A4%ED%96%89%ED%95%98%EC%9E%90%EB%A7%88%EC%9E%90-exit-%EB%90%A0-%EA%B2%BD%EC%9A%B0" target="_blank">Docker - 실행하자마자 exit 될 경우</a><br>
+                        docker logs [컨테이너] : 로그를 확인하면 오류 지점을 알수 있다.<br> <br>
+                        <a href="https://velog.io/@goban/Docker-FlaskGunicornNginx-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B0%B0%ED%8F%AC" target="_blank">[Docker] Flask+Gunicorn+Nginx 클라우드 배포</a><br>
+                        <a href="https://aimaster.tistory.com/10" target="_blank">02. flask + gunicorn + docker 조합</a><br>
+                        <a href="https://qiita.com/khara_nasuo486/items/7dda3aeeea700817236a" target="_blank">DockerでFlask+Gunicorn+Nginxの環境構築</a><br>
+                        <a href="https://www.twblogs.net/a/5eea93964b16c91a2848eb86" target="_blank">Flask後端：Docker+Gunicorn+Nginx部署</a><br>
+                        <a href="https://cholol.tistory.com/489" target="_blank">[동영상 포함] 서버개발자가 되는법 [2_1] - django, nginx 도커로 구동하기</a><br>
+                        <a href="https://losskatsu.github.io/it-infra/docker06/#" target="_blank">[Infra] 도커(docker)(6) 도커 컴포즈(docker compose)를 활용한 여러 개의 Flask, Nginx 배포</a><br>
+                        <a style="color: red" href="https://towardsdatascience.com/how-to-deploy-ml-models-using-flask-gunicorn-nginx-docker-9b32055b3d0" target="_blank">How to deploy ML models using Flask + Gunicorn + Nginx + Docker</a><br>
+                        <a href="https://github.com/nethacker/ubuntu-flask-gunicorn-nginx-docker-compose" target="_blank">ubuntu-flask-gunicorn-nginx-docker-compose - GitHub</a><br>
+                        <a href="https://morioh.com/p/b4d97538df90" target="_blank">Dockerizing Flask with Postgres, Gunicorn, and Nginx - Morioh</a><br>
+                        <a href="https://www.datasciencelearner.com/how-to-deploy-flask-app-using-nginx-and-gunicorn/" target="_blank">Not Everyone is able to Deploy Deep Learning App? Here is the Right Solution</a><br>
+                        <a href="https://blog.entirely.digital/docker-gunicorn-and-flask/" target="_blank">Docker, Gunicorn and Flask</a><br>
+                        <a href="http://dineshshankar.com/2021-01-10-flask-docker-gunicorn-aws/" target="_blank">Flask Docker Gunicorn Aws</a><br>
+                        <a href="https://www.programminghunter.com/article/86561844647/" target="_blank">用docker部署flask+gunicorn+nginx</a><br>
+                        <a href="https://www.cnblogs.com/zhongzhaoxie/p/13684602.html" target="_blank">Nginx+gunicorn+flask+docker算法部署</a><br>
+                        <a href="https://m.imooc.com/article/317550" target="_blank">Docker + Flask + gunicorn + Nginx 部署项目</a><br>
+                        <a href="https://www.google.com/search?q=docker+flask+nginx+gunicorn&ei=GqniYo-tCpGc-Ab2lqGwAg&start=80&sa=N&ved=2ahUKEwiPoq6G8Zv5AhURDt4KHXZLCCY4RhDy0wN6BAgBEEY&biw=1920&bih=937&dpr=1" target="_blank">docker flask nginx gunicorn</a><br>
+                        <a href="https://www.youtube.com/results?search_query=docker+flask+gunicorn" target="_blank">[유투브] docker flask gunicorn</a><br>
+                        <a href="" target="_blank"></a><br>
+                        <a href="" target="_blank"></a><br>
+                        <a href="" target="_blank"></a><br>
 </div>
 
 </body>
