@@ -1,0 +1,13 @@
+FROM python:3.9.9
+
+WORKDIR . .
+
+RUN git clone https://github.com/moljin/FDKproject0.1.git
+
+RUN python -m pip install --upgrade pip
+
+RUN pip install -r requirements.txt
+
+EXPOSE 5000
+
+CMD ["run", "--host", "0.0.0.0"]
