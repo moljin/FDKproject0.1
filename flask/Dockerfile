@@ -13,4 +13,5 @@ RUN pip install -r flask/requirements.txt
 # flask 폴더 안에 있는 app.py실행
 EXPOSE 5000
 #CMD ["python3", "flask/app.py", "--host=0.0.0.0"]
-CMD ["gunicorn", "--workers=2", "--bind=0.0.0.0", "wsgi:app"]
+WORKDIR /home/moljin/FDKproject0.1/flask/
+CMD ["gunicorn", "--workers=2", "--bind=0.0.0.0:5000", "app:app"]
